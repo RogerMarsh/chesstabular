@@ -41,8 +41,8 @@ class SourceEdit(sourceedit.SourceEdit):
             text="Show Original",
             tooltip=" ".join(
                 (
-                    "Display original and edited results data but not generated",
-                    "data.",
+                    "Display original and edited results data but",
+                    "not generated data.",
                 )
             ),
             underline=5,
@@ -53,8 +53,8 @@ class SourceEdit(sourceedit.SourceEdit):
             text="Hide Original",
             tooltip=" ".join(
                 (
-                    "Display edited source and generated data but not original",
-                    "source.",
+                    "Display edited source and generated data but",
+                    "not original source.",
                 )
             ),
             underline=5,
@@ -113,7 +113,7 @@ class SourceEdit(sourceedit.SourceEdit):
         )
 
     def create_tabular_source(self):
-        """Show dialogue to create tabular source and return true if created."""
+        """Show create tabular source dialogue and return True if created."""
         if self.is_report_modified():
             tkinter.messagebox.showinfo(
                 parent=self.get_widget(),
