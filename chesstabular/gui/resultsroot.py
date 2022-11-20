@@ -10,9 +10,8 @@ import chessvalidate.gui.resultsroot
 
 from .. import APPLICATION_NAME
 from . import help_
-from . import configure
-from . import selectemail
 
+# This statement gets a protected-access message from pylint.
 # Cannot set by set_application_name() because chessvalidate.gui.resultsroot
 # has already done a call to this method.
 # ExceptionHandler.set_application_name(APPLICATION_NAME)

@@ -94,6 +94,7 @@ class SourceEdit(sourceedit.SourceEdit):
 
     def on_tabular(self, event=None):
         """Create tabular version of source from validated source document."""
+        del event
         if self.create_tabular_source():
             self.show_buttons_for_generate()
             self.create_buttons()
