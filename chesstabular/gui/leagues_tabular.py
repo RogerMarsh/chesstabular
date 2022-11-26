@@ -25,7 +25,7 @@ class Leagues(leagues_validate.Leagues):
         """Set the error log for file being opened."""
         # Set the error file in folder of results source data
         Leagues.set_error_file_name(
-            os.path.join(self.results_folder, ERROR_LOG)
+            os.path.join(self._results_folder, ERROR_LOG)
         )
 
     @staticmethod
