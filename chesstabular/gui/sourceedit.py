@@ -84,7 +84,7 @@ class SourceEdit(sourceedit.SourceEdit):
             command=self.on_tabular,
         )
         self.define_button(
-            self._btn_closedata,
+            self.btn_closedata,
             text="Close",
             tooltip="Close the folder containing data.",
             underline=0,
@@ -106,7 +106,7 @@ class SourceEdit(sourceedit.SourceEdit):
             (
                 self._btn_generate,
                 self._btn_toggle_compare,
-                self._btn_closedata,
+                self.btn_closedata,
                 self._btn_save,
                 self._btn_report,
                 self._btn_tabular,
