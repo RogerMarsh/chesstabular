@@ -19,14 +19,10 @@ from ..core import configuration
 class FileAccess:
     """Define methods shared by SelectEmail and Configure classes."""
 
-    def file_new(self, conf=None):
-        """Set configuration then delegate."""
-        if conf is None:
-            conf = configuration
-        super().file_new(conf=conf)
+    def file_new(self, conf=configuration, recent=None):
+        """Set configuration if None then delegate."""
+        super().file_new(conf=conf, recent=recent)
 
-    def file_open(self, conf=None):
-        """Set configuration then delegate."""
-        if conf is None:
-            conf = configuration
-        super().file_open(conf=conf)
+    def file_open(self, conf=configuration, recent=None):
+        """Set configuration if None then delegate."""
+        super().file_open(conf=conf, recent=recent)

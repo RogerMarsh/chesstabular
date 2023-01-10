@@ -25,7 +25,7 @@ ABYE = "ab"
 HBYEHALF = "hbh"
 ABYEHALF = "abh"
 TOBEREPORTED = None
-_VOID = "v"
+VOID_GAME = "v"
 NOTARESULT = "not a result"
 DEFAULTED = "gd"
 
@@ -72,10 +72,11 @@ ECF_RESULT_D1 = "d1"
 # Event configuration file.
 
 # Most recently accessed database and configuation files for selecting and
-# extracting text from emails to documents.
+# extracting text from emails, or csv downloads, to documents.
 # Some could be per database, but done per user.
 RECENT_EMAIL_SELECTION = "collection"
 RECENT_EMAIL_EXTRACTION = "event"
+RECENT_CSV_DOWNLOAD = "csv_download"
 RECENT_DOCUMENT = "document"
 RECENT_TABULAR_EVENTS = "tabular_report"
 
